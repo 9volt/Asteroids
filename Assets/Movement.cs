@@ -3,10 +3,11 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 	public GameObject laserShot;
+
 	
 	// Use this for initialization
 	void Start () {
-
+		
 	}
 	
 	// Update is called once per frame
@@ -20,14 +21,6 @@ public class Movement : MonoBehaviour {
 		if (Input.GetButtonDown("Fire1")) {
 			Instantiate(laserShot, position, transform.rotation);	
 		}
-//		if (position.x > 100){
-//			transform.Translate(-100, 0, position.z);	
-//		} else if (position.z > 100){
-//			transform.Translate(position.x, 0, -100);	
-//		} else if (position.x < -100){
-//			transform.Translate(100, 0, position.z);	
-//		} else if (position.z < -100){
-//			transform.Translate(position.x, 0, 100);	
-//		}
+
 	}
 }
