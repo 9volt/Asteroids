@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Movement.cs" />
      <Compile Include="Assets\ShotLogic.cs" />
+     <Compile Include="Assets\astroidScript.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Space Shooter\Info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
