@@ -11,6 +11,6 @@ public class ShotLogic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(0,Time.deltaTime * moveSpeed,0);
+		transform.Translate(0, 0, Time.deltaTime * moveSpeed);
 	}
 }
