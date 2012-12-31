@@ -3,10 +3,12 @@ using System.Collections;
 
 public class ShotLogic : MonoBehaviour {
 	private float moveSpeed;
+	public GameObject explosion;
 	
 	// Use this for initialization
 	void Start () {
-		rigidbody.AddForce(transform.forward * 2000);
+		rigidbody.AddForce(transform.forward * 4000);
+		Destroy (gameObject, 5);
 	}
 	
 	// Update is called once per frame
@@ -14,8 +16,10 @@ public class ShotLogic : MonoBehaviour {
 		
 	}
 	
-	void onCollisionEnter(Collision collision){
-		Debug.Log("BOOM");	
+	void OnCollisionEnter(Collision collision){
+		Instantiate(explosion, transform.position, Quaternion.Inverse (transform.rotation));
+		Destroy (gameObject);
+		Destroy (gameObject, 2);
 	}
 	
 }
