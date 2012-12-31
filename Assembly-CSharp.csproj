@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{54D0CAE7-4DA6-1633-F5A7-A6316CE50F9B}</ProjectGuid>
+	<ProjectGuid>{70261382-45EB-0236-7EA2-855FCD841B8F}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -44,17 +44,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameWatch.cs" />
-     <Compile Include="Assets\Movement.cs" />
-     <Compile Include="Assets\ScreenWrap.cs" />
-     <Compile Include="Assets\ShotLogic.cs" />
-     <Compile Include="Assets\astroidScript.cs" />
+     <Compile Include="Assets\Scripts\GameWatch.cs" />
+     <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\ScreenWrap.cs" />
+     <Compile Include="Assets\Scripts\ShootControls.cs" />
+     <Compile Include="Assets\Scripts\ShotLogic.cs" />
+     <Compile Include="Assets\Scripts\astroidScript.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-     <None Include="Assets\Space Shooter\Info.txt" />
+     <None Include="Assets\Prefabs\Space Shooter\Info.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{C26F11E9-7247-6212-4D74-E00ADEDDC85A}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{99BCAAA2-9AD2-A52C-342B-C4FCA96313CA}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
