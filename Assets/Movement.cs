@@ -12,14 +12,14 @@ public class Movement : MonoBehaviour {
 		transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
 		transform.Translate(0, 0, Input.GetAxis("Vertical"));
 		Vector3 position = transform.position;
-		if (position.x > 100){
-			transform.Translate(-100, 0, position.z);	
-		} else if (position.z > 100){
-			transform.Translate(position.x, 0, -100);	
-		} else if (position.x < -100){
-			transform.Translate(100, 0, position.z);	
-		} else if (position.z < -100){
-			transform.Translate(position.x, 0, 100);	
-		}
+//		if (position.x > 100){
+//			transform.Translate(-100, 0, position.z);	
+//		} else if (position.z > 100){
+//			transform.Translate(position.x, 0, -100);	
+//		} else if (position.x < -100){
+//			transform.Translate(100, 0, position.z);	
+//		} else if (position.z < -100){
+//			transform.Translate(position.x, 0, 100);	
+//		}
 	}
 }
