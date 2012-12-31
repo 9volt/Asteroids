@@ -19,7 +19,6 @@ public class ShotLogic : MonoBehaviour {
 	void OnCollisionEnter(Collision collision){
 		Instantiate(explosion, transform.position, Quaternion.Inverse (transform.rotation));
 		Destroy (gameObject);
-		Destroy (gameObject, 2);
 	}
 	
 }

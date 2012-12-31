@@ -19,7 +19,7 @@ public class astroidScript : MonoBehaviour {
 		health--;
 		if (health <= 0){
 			Instantiate(deathAnimation, transform.position, transform.rotation);
-			Destroy (gameObject);
+			Destroy(gameObject);
 		}
 	}
 }

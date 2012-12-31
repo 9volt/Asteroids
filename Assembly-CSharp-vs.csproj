@@ -44,6 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameWatch.cs" />
      <Compile Include="Assets\Movement.cs" />
      <Compile Include="Assets\ShotLogic.cs" />
      <Compile Include="Assets\astroidScript.cs" />
