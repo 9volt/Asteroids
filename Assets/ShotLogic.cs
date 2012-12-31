@@ -6,11 +6,16 @@ public class ShotLogic : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		moveSpeed = 50;
+		rigidbody.AddForce(transform.forward * 2000);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(0, 0, Time.deltaTime * moveSpeed);
+		
 	}
+	
+	void onCollisionEnter(Collision collision){
+		Debug.Log("BOOM");	
+	}
+	
 }
