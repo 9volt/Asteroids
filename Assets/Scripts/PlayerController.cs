@@ -1,12 +1,12 @@
 using UnityEngine;
 using System.Collections;
 
-public class Movement : MonoBehaviour {
-
+public class PlayerController : MonoBehaviour {
+	public int health;
 	
 	// Use this for initialization
 	void Start () {
-		
+		health = 5;
 	}
 	
 	// Update is called once per frame
@@ -17,4 +17,13 @@ public class Movement : MonoBehaviour {
 		rigidbody.AddForce(transform.forward * Input.GetAxis("Vertical") * 1000);
 		rigidbody.AddTorque(0, Input.GetAxis("Horizontal") * 1000, 0);
 	}
+	
+	void OnCollisionEnter(Collision collision){
+		health--;
+		if (health <= 0){
+			//Instantiate(deathAnimation, transform.position, transform.rotation);
+			Destroy(gameObject);
+		}
+	}
+
 }
