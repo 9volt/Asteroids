@@ -24,15 +24,10 @@ public class PlayerController : MonoBehaviour {
 		
 		
 		// Toggle the camera location/direction when Numpad 0 is pressed
-		if (Input.GetKeyDown(KeyCode.Keypad0)) {
+		if (Input.GetKeyDown(KeyCode.Equals)) {
 			if (normalCam) {
 				Camera.main.transform.position = new Vector3(0, 100, -200);
-				// Okay, we need to have a discussion about wtf a quarternion is, and why
-				// I can't just set the rotation the same way it is in the Inspector...
-				
-				// ALSO.. what the FUCK is up with having to cast literal floats to floats?
-				// It kept saying it couldn't convert doubles to floats.. uhh.. yeah okay.
-				Camera.main.transform.rotation = new Quaternion((float)0.2, 0, 0, (float)1.0);
+				Camera.main.transform.rotation = Quaternion.Euler(22, 0, 0);
 			} else {
 				Camera.main.transform.position = normalCamPosition;
 				Camera.main.transform.rotation = normalCamRotation;
