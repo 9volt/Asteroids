@@ -8,9 +8,6 @@ public class GameWatch : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		totalAsteroids = 3;
-		for(int i = 0; i < totalAsteroids; i++){
-			SpawnAsteroid();
-		}
 	}
 	
 	void SpawnAsteroid(){
@@ -18,6 +15,7 @@ public class GameWatch : MonoBehaviour {
 		Quaternion rot = Quaternion.Euler(0, Random.Range(0, 360), 0);
 		GameObject a = (GameObject)Instantiate(asteroid, pos, rot);
 		a.rigidbody.AddForce(a.transform.forward * 100000);
+		a.GetComponent<AsteroidScript>().size = 3;
 	}
 	
 	// Update is called once per frame

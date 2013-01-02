@@ -1,0 +1,18 @@
+using UnityEngine;
+using System.Collections;
+
+public class HealthShips : MonoBehaviour {
+	public PlayerController target;
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	if (target.health <= 4){
+			Destroy(gameObject);
+		}
+	}
+}
