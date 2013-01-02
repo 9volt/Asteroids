@@ -18,6 +18,7 @@ public class GameWatch : MonoBehaviour {
 		Quaternion rot = Quaternion.Euler(0, Random.Range(0, 360), 0);
 		GameObject a = (GameObject)Instantiate(asteroid, pos, rot);
 		a.rigidbody.AddForce(a.transform.forward * 100000);
+		a.GetComponent<astroidScript>().size = 2;
 	}
 	
 	// Update is called once per frame
