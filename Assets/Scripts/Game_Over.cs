@@ -6,14 +6,14 @@ public class Game_Over : MonoBehaviour {
 	
 	// Use this for initialization
 	void Awake () {
-		this.guiText.enabled = false;
+		guiText.enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (target.health <= 0){
-			this.guiText.material.color = Color.red;
-			this.guiText.enabled = true;
+			guiText.material.color = Color.red;
+			guiText.enabled = true;
 		}
 	
 	}

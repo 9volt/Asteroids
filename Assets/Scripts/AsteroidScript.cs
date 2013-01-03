@@ -7,6 +7,7 @@ public class AsteroidScript : MonoBehaviour {
 	public GameObject asteroid;
 	public int size;
 	
+	
 	// Use this for initialization
 	void Start () {
 		health = 3;
@@ -27,6 +28,8 @@ public class AsteroidScript : MonoBehaviour {
 				CreateAsteroid();	
 			}
 			Destroy(gameObject);
+			Score_Counter s = (Score_Counter) GameObject.Find("Score").GetComponent("Score_Counter");
+			s.score++;
 		}
 	}
 	
