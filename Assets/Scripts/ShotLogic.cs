@@ -7,13 +7,12 @@ public class ShotLogic : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		rigidbody.AddForce(transform.forward * 4000);
+		//rigidbody.AddForce(transform.forward * 4000);
 		Destroy (gameObject, 5);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 	
 	void OnCollisionEnter(Collision collision){

@@ -18,7 +18,9 @@ public class ShootControls : MonoBehaviour {
 			nextFire = Time.time + fireRate;
 			GameObject shot = (GameObject) Instantiate(laserShot, transform.position, transform.rotation);	
 			//Somehow add more force to the shot
-			//shot.GetComponent<Rigidbody>().AddForce(transform.parent.rigidbody.velocity);
+			//Debug.Log(transform.parent.rigidbody.velocity + " " + transform.forward);
+			int curSpeed = (int)transform.parent.rigidbody.velocity.magnitude * 100;
+			shot.GetComponent<Rigidbody>().AddForce(transform.forward * (6000 + curSpeed));
 		}
 
 	}

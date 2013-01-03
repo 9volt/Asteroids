@@ -11,7 +11,7 @@ public class HealthShips : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	if (target.health <= 4){
+	if (target.health <= 2){
 			Destroy(gameObject);
 		}
 	}
