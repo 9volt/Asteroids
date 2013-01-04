@@ -5,6 +5,7 @@ public class AsteroidScript : MonoBehaviour {
 	private int health;
 	public GameObject deathAnimation;
 	public GameObject asteroid;
+	public GameObject power_up;
 	public int size;
 	
 	
@@ -30,6 +31,9 @@ public class AsteroidScript : MonoBehaviour {
 			Destroy(gameObject);
 			Score_Counter s = (Score_Counter) GameObject.Find("Score").GetComponent("Score_Counter");
 			s.score++;
+			if (Random.Range(1, 5) ==4){
+				CreatePowerUp();
+			}
 		}
 	}
 	
@@ -39,5 +43,12 @@ public class AsteroidScript : MonoBehaviour {
 		GameObject a = (GameObject)Instantiate(asteroid, pos, rot);
 		a.rigidbody.AddForce(a.transform.forward * 100000);
 		a.GetComponent<AsteroidScript>().size = size - 1;
+	}
+	
+	void CreatePowerUp(){
+		Vector3 pos = new Vector3(transform.position.x + Random.Range(-10, 10), 0, transform.position.z + Random.Range(-10, 10));
+		Quaternion rot = Quaternion.Euler(0, Random.Range(0, 360), 0);
+		GameObject p = (GameObject)Instantiate(power_up, pos, rot);
+		p.rigidbody.AddForce(p.transform.forward * 1000);
 	}
 }

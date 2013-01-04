@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\HealthShips2.cs" />
      <Compile Include="Assets\Scripts\HealthShips3.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Power_up.cs" />
      <Compile Include="Assets\Scripts\Score_Counter.cs" />
      <Compile Include="Assets\Scripts\ScreenWrap.cs" />
      <Compile Include="Assets\Scripts\ShootControls.cs" />

@@ -1,15 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AsteroidScript.cs">
-    <Files>
-      <File FileName="Assets\Scripts\HealthShips.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Over.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\HealthShips2.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\HealthShips3.cs" Line="11" Column="2" />
-      <File FileName="Assets\Scripts\Score_Counter.cs" Line="14" Column="3" />
-      <File FileName="Assets\Scripts\AsteroidScript.cs" Line="31" Column="23" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -21,11 +21,14 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	void OnCollisionEnter(Collision collision){
-		health--;
+		if (!collision.gameObject.CompareTag("Power_up")){
+			health--;
+		}
 		if (health <= 0){
 			//Instantiate(deathAnimation, transform.position, transform.rotation);
 			Destroy(gameObject);
 		}
+		
 	}
 
 }
